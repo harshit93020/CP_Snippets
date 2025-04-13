@@ -77,6 +77,7 @@ struct PolyHash{
 };
 
 int main(){
+    // remember to give const* as input in the PolyHash 
     PolyHash H = PolyHash("racecar");
 
     assert(H.get_hash(0, 6) == H.rev_hash(0, 6));
